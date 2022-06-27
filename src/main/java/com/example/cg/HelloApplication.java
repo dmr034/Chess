@@ -23,9 +23,12 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
+
         this.chessController = fxmlLoader.getController();
         this.chessController.setModel(this.chessModel);
         //this.chessController.onBPawn1MouseClicked(event -> {
+
+        //}
     }
 
     public static void main(String[] args) {

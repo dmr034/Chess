@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
 
+import java.util.ArrayList;
+
 public class HelloController {
     private HelloController theController;
     private HelloModel theModel;
@@ -56,9 +58,27 @@ public class HelloController {
     @FXML
     private Rectangle WPawn8;
 
+    private ArrayList<BlackPawn> BlackPawns;
+    private ArrayList<WhitePawn> WhitePawns;
+
+    public void setTheModel(HelloModel theModel) {
+        this.theModel = theModel;
+
+        int i = 0;
+        for(BlackPawn blackPawn : theModel.getBlackPawns()) {
+
+        }
+    }
+
+    /*
+    When BPawn is clicked, give option to move forward.
+    If BPawn is in starting position, then give option to move two spaces forward.
+    If BPawn is within killing range of an enemy, allow player to move diagonally
+    and take the opponent piece.
+     */
     @FXML
     void onBPawn1MouseClicked(MouseEvent event) {
-
+        //BPawn1.getOnMouseClicked(event);
     }
 
     @FXML
