@@ -164,5 +164,16 @@ public class HelloController {
      */
     public void setModel(HelloModel chessModel) {
         this.theModel = chessModel;
+
+        BlackPawn BlackPawn1 = new BlackPawn((int)BPawn1.getX(), (int)BPawn1.getY(), this.BPawn1);
+        BlackPawn BlackPawn2 = new BlackPawn((int)BPawn2.getX(), (int)BPawn2.getY(), this.BPawn2);
+        BlackPawn BlackPawn3 = new BlackPawn((int)BPawn3.getX(), (int)BPawn3.getY(), this.BPawn3);
+        BlackPawn BlackPawn4 = new BlackPawn((int)BPawn4.getX(), (int)BPawn4.getY(), this.BPawn4);
+        BlackPawn BlackPawn5 = new BlackPawn((int)BPawn5.getX(), (int)BPawn5.getY(), this.BPawn5);
+        BlackPawn BlackPawn6 = new BlackPawn((int)BPawn6.getX(), (int)BPawn6.getY(), this.BPawn6);
+        BlackPawn BlackPawn7 = new BlackPawn((int)BPawn7.getX(), (int)BPawn7.getY(), this.BPawn7);
+        BlackPawn BlackPawn8 = new BlackPawn((int)BPawn8.getX(), (int)BPawn8.getY(), this.BPawn8);
+
+
     }
 }

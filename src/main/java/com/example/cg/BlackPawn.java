@@ -12,9 +12,9 @@ public class BlackPawn extends Pawn{
         bPawn = new Rectangle();
     }
 
-    public BlackPawn(int xLoc, int yLoc, int Rectangle) {
+    public BlackPawn(int xLoc, int yLoc, Rectangle thePawn) {
         super(xLoc, yLoc);
-        bPawn = new Rectangle();
+        this.bPawn = thePawn;
     }
 
     /**
