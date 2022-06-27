@@ -45,36 +45,36 @@
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="6">
                <children>
-                  <Rectangle fx:id="WPawn8" arcHeight="5.0" arcWidth="5.0" fill="#c5c5c5" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="WPawn8" arcHeight="5.0" arcWidth="5.0" fill="#c5c5c5" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onWPawn8MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
                <children>
-                  <Rectangle fx:id="WPawn7" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="WPawn7" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onWPawn7MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
                <children>
-                  <Rectangle fx:id="WPawn6" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="WPawn6" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onWPawn6MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
                <children>
-                  <Rectangle fx:id="WPawn5" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="WPawn5" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onWPawn5MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
                <children>
-                  <Rectangle fx:id="WPawn4" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="WPawn4" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onWPawn4MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children>
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
                <children>
-                  <Rectangle fx:id="WPawn3" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="WPawn3" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onWPawn3MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
-                  <Rectangle fx:id="WPawn2" arcHeight="5.0" arcWidth="5.0" fill="#c5c5c5" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="WPawn2" arcHeight="5.0" arcWidth="5.0" fill="#c5c5c5" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onWPawn2MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
                <children>
-                  <Rectangle fx:id="WPawn1" arcHeight="5.0" arcWidth="5.0" fill="#c5c5c5" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="WPawn1" arcHeight="5.0" arcWidth="5.0" fill="#c5c5c5" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onWPawn1MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
@@ -110,35 +110,35 @@
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
                <children>
-                  <Rectangle fx:id="Pawn8" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="BPawn8" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onBPawn8MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
                <children>
-                  <Rectangle fx:id="Pawn7" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="BPawn7" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onBPawn7MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
                <children>
-                  <Rectangle fx:id="Pawn6" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="BPawn6" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onBPawn6MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <children>
-                  <Rectangle fx:id="Pawn5" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="BPawn5" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onBPawn5MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <children>
-                  <Rectangle fx:id="Pawn4" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="BPawn4" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onBPawn4MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <Rectangle fx:id="Pawn3" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="BPawn3" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onBPawn3MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <Rectangle fx:id="Pawn2" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="BPawn2" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onBPawn2MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                <children>
-                  <Rectangle fx:id="Pawn1" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="44.0" />
+                  <Rectangle fx:id="BPawn1" arcHeight="5.0" arcWidth="5.0" fill="#00000085" height="62.0" layoutX="13.0" layoutY="1.0" onMouseClicked="#onBPawn1MouseClicked" stroke="BLACK" strokeType="INSIDE" width="44.0" />
                </children></Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" />

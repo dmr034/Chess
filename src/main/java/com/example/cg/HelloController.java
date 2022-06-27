@@ -64,9 +64,11 @@ public class HelloController {
     public void setTheModel(HelloModel theModel) {
         this.theModel = theModel;
 
+
+
         int i = 0;
         for(BlackPawn blackPawn : theModel.getBlackPawns()) {
-
+            this.BlackPawns.add(blackPawn);
         }
     }
 

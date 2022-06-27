@@ -14,6 +14,7 @@ public class HelloModel {
     }
 
     public void setBlackPawns(ArrayList<BlackPawn> blackPawns) {
+
         BlackPawns = blackPawns;
     }
 
