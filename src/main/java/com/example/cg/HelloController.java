@@ -1,7 +1,9 @@
 package com.example.cg;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
 
 import java.util.ArrayList;
@@ -58,6 +60,12 @@ public class HelloController {
     @FXML
     private Rectangle WPawn8;
 
+    @FXML
+    private GridPane chessBoard;
+
+    @FXML
+    private Button startButton;
+
     private ArrayList<BlackPawn> BlackPawns;
     private ArrayList<WhitePawn> WhitePawns;
 
@@ -72,108 +80,53 @@ public class HelloController {
         }
     }
 
-    /*
-    When BPawn is clicked, give option to move forward.
-    If BPawn is in starting position, then give option to move two spaces forward.
-    If BPawn is within killing range of an enemy, allow player to move diagonally
-    and take the opponent piece.
-     */
-    @FXML
-    void onBPawn1MouseClicked(MouseEvent event) {
-        //BPawn1.getOnMouseClicked(event);
-    }
-
-    @FXML
-    void onBPawn2MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onBPawn3MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onBPawn4MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onBPawn5MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onBPawn6MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onBPawn7MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onBPawn8MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onWPawn1MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onWPawn2MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onWPawn3MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onWPawn4MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onWPawn5MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onWPawn6MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onWPawn7MouseClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void onWPawn8MouseClicked(MouseEvent event) {
-
-    }
-
-
-    /*
-    Sets the model
+    /**
+     * Sets the Model
+     * @param chessModel
      */
     public void setModel(HelloModel chessModel) {
         this.theModel = chessModel;
 
-        BlackPawn BlackPawn1 = new BlackPawn((int)BPawn1.getX(), (int)BPawn1.getY(), this.BPawn1);
-        BlackPawn BlackPawn2 = new BlackPawn((int)BPawn2.getX(), (int)BPawn2.getY(), this.BPawn2);
-        BlackPawn BlackPawn3 = new BlackPawn((int)BPawn3.getX(), (int)BPawn3.getY(), this.BPawn3);
-        BlackPawn BlackPawn4 = new BlackPawn((int)BPawn4.getX(), (int)BPawn4.getY(), this.BPawn4);
-        BlackPawn BlackPawn5 = new BlackPawn((int)BPawn5.getX(), (int)BPawn5.getY(), this.BPawn5);
-        BlackPawn BlackPawn6 = new BlackPawn((int)BPawn6.getX(), (int)BPawn6.getY(), this.BPawn6);
-        BlackPawn BlackPawn7 = new BlackPawn((int)BPawn7.getX(), (int)BPawn7.getY(), this.BPawn7);
-        BlackPawn BlackPawn8 = new BlackPawn((int)BPawn8.getX(), (int)BPawn8.getY(), this.BPawn8);
 
+        chessBoard.setColumnIndex(BPawn1, 0);
+        chessBoard.setRowIndex(BPawn1, 1);
+        chessBoard.setColumnIndex(BPawn2, 1);
+        chessBoard.setRowIndex(BPawn2, 1);
+        chessBoard.setColumnIndex(BPawn3, 2);
+        chessBoard.setRowIndex(BPawn3, 1);
+        chessBoard.setColumnIndex(BPawn4, 3);
+        chessBoard.setRowIndex(BPawn4, 1);
+        chessBoard.setColumnIndex(BPawn5, 4);
+        chessBoard.setRowIndex(BPawn5, 1);
+        chessBoard.setColumnIndex(BPawn6, 5);
+        chessBoard.setRowIndex(BPawn6, 1);
+        chessBoard.setColumnIndex(BPawn7, 6);
+        chessBoard.setRowIndex(BPawn7, 1);
+        chessBoard.setColumnIndex(BPawn8, 7);
+        chessBoard.setRowIndex(BPawn8, 1);
+
+        BlackPawn BlackPawn1 = new BlackPawn(chessBoard.getRowIndex(BPawn1), chessBoard.getColumnIndex(BPawn1), this.BPawn1);
+        BlackPawn BlackPawn2 = new BlackPawn(chessBoard.getRowIndex(BPawn2), chessBoard.getColumnIndex(BPawn2), this.BPawn2);
+        BlackPawn BlackPawn3 = new BlackPawn(chessBoard.getRowIndex(BPawn3), chessBoard.getColumnIndex(BPawn3), this.BPawn3);
+        BlackPawn BlackPawn4 = new BlackPawn(chessBoard.getRowIndex(BPawn4), chessBoard.getColumnIndex(BPawn4), this.BPawn4);
+        BlackPawn BlackPawn5 = new BlackPawn(chessBoard.getRowIndex(BPawn5), chessBoard.getColumnIndex(BPawn1), this.BPawn5);
+        BlackPawn BlackPawn6 = new BlackPawn(chessBoard.getRowIndex(BPawn6), chessBoard.getColumnIndex(BPawn1), this.BPawn6);
+        BlackPawn BlackPawn7 = new BlackPawn(chessBoard.getRowIndex(BPawn7), chessBoard.getColumnIndex(BPawn1), this.BPawn7);
+        BlackPawn BlackPawn8 = new BlackPawn(chessBoard.getRowIndex(BPawn8), chessBoard.getColumnIndex(BPawn1), this.BPawn8);
+
+        this.BPawn1.setOnMouseClicked(event -> {
+            // check for enemy diagonally up to left and right set canTake to true
+            // highlight a box
+            System.out.println("BPAWN1 was clicked");
+            if (BlackPawn1.isAtStart(chessBoard.getRowIndex(BPawn1), chessBoard.getColumnIndex(BPawn1)) == true) {
+                System.out.println(BlackPawn1.xLocation + "," + BlackPawn1.yLocation);
+                BlackPawn1.blackPawnMove(chessBoard.getRowIndex(BPawn1)+2, chessBoard.getColumnIndex(BPawn1));
+                System.out.println(BlackPawn1.xLocation + "," + BlackPawn1.yLocation);
+            }
+            else {
+                BlackPawn1.blackPawnMove(chessBoard.getRowIndex(BPawn1)+1, chessBoard.getColumnIndex(BPawn1));
+            }
+        });
 
     }
 }

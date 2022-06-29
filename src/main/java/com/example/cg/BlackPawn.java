@@ -4,16 +4,21 @@ import javafx.scene.shape.Rectangle;
 
 public class BlackPawn extends Pawn{
     private Rectangle bPawn; // The pawn
-    boolean isAtStart = true;
+    private int startRow;
+    private int startCol;
     boolean canTake = true;
 
     public BlackPawn() {
         super();
+        startRow = 0;
+        startCol = 0;
         bPawn = new Rectangle();
     }
 
     public BlackPawn(int xLoc, int yLoc, Rectangle thePawn) {
         super(xLoc, yLoc);
+        startRow = xLoc;
+        startCol = yLoc;
         this.bPawn = thePawn;
     }
 
@@ -25,15 +30,19 @@ public class BlackPawn extends Pawn{
      * @param yLoc
      */
     public void blackPawnMove(int xLoc, int yLoc) {
-        if(isAtStart == true) {
-            super.pawnMove(xLoc, yLoc);
-            isAtStart = false;
+        super.pawnMove(xLoc, yLoc);
+    }
+
+    /**
+     * If the pawn is at it's location that it started at, return true
+     * @param xLoc
+     * @param yLoc
+     * @return
+     */
+    public boolean isAtStart(int xLoc, int yLoc){
+        if(xLoc == startRow && yLoc == startCol) {
+            return true;
         }
-        else if(canTake == true) { // create a way that the pawn can move diagonally to take
-            super.pawnMove(xLoc, yLoc);
-        }
-        else {
-            super.pawnMove(xLoc, yLoc);
-        }
+        return false;
     }
 }

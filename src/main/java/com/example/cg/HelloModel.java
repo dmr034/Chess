@@ -27,7 +27,7 @@ public class HelloModel {
     }
 
     public boolean checkBPawnInStartLocation(BlackPawn blackPawn) {
-        if(blackPawn.isAtStart != true) {
+        if(blackPawn.isAtStart(blackPawn.xLocation, blackPawn.yLocation)) {
             return false;
         }
         return true;
