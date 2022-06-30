@@ -45,4 +45,8 @@ public class BlackPawn extends Pawn{
         }
         return false;
     }
+
+    public Rectangle getbPawn() {
+        return bPawn;
+    }
 }

@@ -17,6 +17,7 @@ public class Pawn {
     public void updateLocation(int xLocation, int yLocation) {
         this.xLocation = xLocation;
         this.yLocation = yLocation;
+
     }
 
     public int getxLocation() {
