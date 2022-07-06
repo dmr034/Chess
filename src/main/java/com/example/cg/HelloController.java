@@ -132,12 +132,12 @@ public class HelloController {
         this.BPawn1.setOnMouseClicked(event -> {
             // check for enemy diagonally up to left and right set canTake to true
             // highlight a box
-            if (BlackPawn1.isAtStart(chessBoard.getRowIndex(BPawn1), chessBoard.getColumnIndex(BPawn1)) == true) {
+            if(checkForPieceForBPawn(BlackPawn1) == true) {
+                System.out.println("Error: Pawn cannot move forward with a piece in front");
+            }
+            else if (BlackPawn1.isAtStart(chessBoard.getRowIndex(BPawn1), chessBoard.getColumnIndex(BPawn1)) == true) {
                 BlackPawn1.blackPawnMove(chessBoard.getRowIndex(BPawn1) + 2, chessBoard.getColumnIndex(BPawn1));
                 chessBoard.add(BPawn1, BlackPawn1.yLocation, BlackPawn1.xLocation);
-            }
-            else if(checkForPieceForBPawn(BlackPawn1) == true) {
-                System.out.println("Error: Pawn cannot move forward with a piece in front");
             }
             else if(BlackPawn1.xLocation > 6) {
                 System.out.printf("Error: End of Board");
@@ -172,7 +172,7 @@ public class HelloController {
      * @return
      */
     public boolean checkForPieceForBPawn(BlackPawn pawn) {
-        if(chessBoard.contains(chessBoard.getRowIndex(pawn.getbPawn()), chessBoard.getColumnIndex(pawn.getbPawn()))) {
+        if(chessBoard.contains(chessBoard.getRowIndex(pawn.getbPawn())+1, chessBoard.getColumnIndex(pawn.getbPawn()))) {
             return true; // currently not working
         }
         return false;

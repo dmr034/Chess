@@ -4,16 +4,21 @@ import javafx.scene.shape.Rectangle;
 
 public class WhitePawn extends Pawn{
     private Rectangle wPawn;
-    boolean isAtStart = true;
+    private int startRow;
+    private int startCol;
     boolean canTake = true;
 
     public WhitePawn() {
         super();
+        startRow = 0;
+        startCol = 0;
         wPawn = new Rectangle();
     }
 
     public WhitePawn(int xLoc, int yLoc, int Rectangle) {
         super(xLoc, yLoc);
+        startRow = xLoc;
+        startCol = yLoc;
         wPawn = new Rectangle();
     }
 
@@ -29,9 +34,8 @@ public class WhitePawn extends Pawn{
      * @param yLoc
      */
     public void whitePawnMove(int xLoc, int yLoc) {
-        if(isAtStart == true) {
+        if(isAtStart(xLoc, yLoc)) {
             super.pawnMove(xLoc, yLoc);
-            isAtStart = false;
         }
         else if(canTake == true) { // create a way that the pawn can move diagonally to take
             super.pawnMove(xLoc, yLoc);
@@ -40,4 +44,12 @@ public class WhitePawn extends Pawn{
             super.pawnMove(xLoc, yLoc);
         }
     }
+
+    public boolean isAtStart(int xLoc, int yLoc){
+        if(xLoc == startRow && yLoc == startCol) {
+            return true;
+        }
+        return false;
+    }
+
 }

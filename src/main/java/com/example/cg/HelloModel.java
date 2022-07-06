@@ -34,7 +34,7 @@ public class HelloModel {
     }
 
     public boolean checkWPawnInStartLocation(WhitePawn whitePawn) {
-        if(whitePawn.isAtStart != true) {
+        if(whitePawn.isAtStart(whitePawn.xLocation, whitePawn.yLocation) != true) {
             return false;
         }
         return true;
